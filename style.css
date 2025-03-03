@@ -1,0 +1,41 @@
+ 
+:root {
+    --primary-bg: #ffffff;
+    --primary-text: #333333;
+    --secondary-bg: #f8f9fa;
+}
+
+[data-theme="dark"] {
+    --primary-bg: #1a1a1a;
+    --primary-text: #ffffff;
+    --secondary-bg: #2d2d2d;
+}
+
+[data-theme="custom"] {
+    --primary-bg: #fff3e0;
+    --primary-text: #bf360c;
+    --secondary-bg: #ffe0b2;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    transition: all 0.3s ease;
+}
+
+.nav-custom {
+    background-color: var(--secondary-bg) !important;
+    padding: 1rem;
+}
+
+section {
+    padding: 4rem 0;
+    min-height: 100vh;
+}
+
+.theme-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
